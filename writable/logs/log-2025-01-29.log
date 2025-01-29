@@ -1,0 +1,384 @@
+ERROR - 2025-01-29 02:37:39 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 02:37:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: miriendatalabarteria/articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 02:42:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 02:42:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 02:44:34 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 02:44:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 02:45:28 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 02:45:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 02:46:12 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 02:46:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 02:48:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 02:48:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 03:03:41 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 03:03:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-29 03:05:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mi_rienda_talab...', 3306, '', 0)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#9 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mi_rienda_talabarteria' in C:\wamp64\www\miriendatalabarteria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\miriendatalabarteria\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\miriendatalabarteria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\miriendatalabarteria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\miriendatalabarteria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\miriendatalabarteria\app\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+#7 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+#8 C:\wamp64\www\miriendatalabarteria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\miriendatalabarteria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\miriendatalabarteria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\miriendatalabarteria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-29 03:05:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mi_rienda_talabarteria'
+[Method: POST, Route: articulo]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulo`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ArticuloController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArticuloController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArticuloController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

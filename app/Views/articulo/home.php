@@ -75,7 +75,7 @@
 						<img src="images/img-01.jpg" alt="IMG">
 					</div>
 
-					<form class="login100-form validate-form" method="post" action="/articulo/">
+					<form class="login100-form validate-form" method="post" action="<?= base_url('articulo') ?>">
 						<span class="login100-form-title">
 							Mi Rienda Talabartería
 						</span>
