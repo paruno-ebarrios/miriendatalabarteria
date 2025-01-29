@@ -1,0 +1,4 @@
+app/Config/App.php
+.env
+.vscode/*
+logs/*
