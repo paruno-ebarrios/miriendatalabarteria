@@ -292,14 +292,14 @@
 										<span>Dashboard</span>
 									</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="mailbox-folder.html">
 										<span class="pull-right label label-primary">182</span>
 										<i class="fa fa-envelope" aria-hidden="true"></i>
 										<span>Mailbox</span>
 									</a>
-								</li>
-								<li class="nav-parent">
+								</li> -->
+								<!-- <li class="nav-parent">
 									<a>
 										<i class="fa fa-copy" aria-hidden="true"></i>
 										<span>Pages</span>
@@ -381,34 +381,34 @@
 											</a>
 										</li>
 									</ul>
-								</li>
+								</li> -->
 								<li class="nav-parent">
 									<a>
 										<i class="fa fa-tasks" aria-hidden="true"></i>
-										<span>UI Elements</span>
+										<span> Articulos (UI Elements)</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="ui-elements-typography.html">
-												Typography
+												(Alta de articulo)Typography
 											</a>
 										</li>
 										<li>
 											<a href="ui-elements-icons.html">
-												Icons
+												(Modificacion Articulo)Icons
 											</a>
 										</li>
 										<li>
 											<a href="ui-elements-tabs.html">
-												Tabs
+												(Baja de Articulos)Tabs
 											</a>
 										</li>
 										<li>
 											<a href="ui-elements-panels.html">
-												Panels
+												(Asignacion de articulos a localidades)Panels
 											</a>
 										</li>
-										<li>
+										<!-- <li>
 											<a href="ui-elements-widgets.html">
 												Widgets
 											</a>
@@ -492,21 +492,21 @@
 											<a href="ui-elements-extra.html">
 												Extra
 											</a>
-										</li>
+										</li> -->
 									</ul>
 								</li>
 								<li class="nav-parent">
 									<a>
 										<i class="fa fa-list-alt" aria-hidden="true"></i>
-										<span>Forms</span>
+										<span>(Inventario de locaciones)Forms</span>
 									</a>
 									<ul class="nav nav-children">
 										<li>
 											<a href="forms-basic.html">
-												Basic
+												(Stock de locaciones)Basic
 											</a>
 										</li>
-										<li>
+										<!-- <li>
 											<a href="forms-advanced.html">
 												Advanced
 											</a>
@@ -530,7 +530,7 @@
 											<a href="forms-code-editor.html">
 												Code Editor
 											</a>
-										</li>
+										</li> -->
 									</ul>
 								</li>
 								<li class="nav-parent">
