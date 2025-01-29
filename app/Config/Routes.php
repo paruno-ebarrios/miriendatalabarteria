@@ -19,3 +19,5 @@ $routes->post('/venta/store', 'VentaController::store');
 $routes->get('/venta/edit/(:num)', 'VentaController::edit/$1');
 $routes->post('/venta/update/(:num)', 'VentaController::update/$1');
 $routes->get('/venta/delete/(:num)', 'VentaController::delete/$1');
+
+$routes->post('/articulo', 'ArticuloController::index');

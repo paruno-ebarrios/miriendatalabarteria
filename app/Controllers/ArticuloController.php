@@ -16,7 +16,7 @@ class ArticuloController extends BaseController
     public function index()
     {
         $data['articulos'] = $this->articuloModel->findAll();
-        return view('articulo/index', $data);
+        return view('articulo/index1', $data);
     }
 
     // Mostrar formulario de creación
