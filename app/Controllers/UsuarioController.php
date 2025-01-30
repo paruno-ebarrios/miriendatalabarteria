@@ -33,7 +33,7 @@ class UsuarioController extends BaseController
             'usuario_estatus' => $this->request->getPost('usuario_estatus')
         ]);
 
-        return redirect()->to('/usuario');
+        return redirect()->to('/usuarios');
     }
 
     public function edit($id)
@@ -51,13 +51,13 @@ class UsuarioController extends BaseController
             'rol_id' => $this->request->getPost('rol_id')
         ]);
 
-        return redirect()->to('/usuario');
+        return redirect()->to('/usuarios');
     }
 
     public function delete($id)
     {
         $this->usuarioModel->delete($id);
-        return redirect()->to('/usuario');
+        return redirect()->to('/usuarios');
     }
 }
 

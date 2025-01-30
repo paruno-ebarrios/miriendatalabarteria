@@ -46,26 +46,28 @@
 			color: black;
 		}
 	</style>
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('vendor/bootstrap/css/bootstrap.min.css') ?>">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('fonts/font-awesome-4.7.0/css/font-awesome.min.css') ?>">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('vendor/animate/animate.css') ?>">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('vendor/css-hamburgers/hamburgers.min.css') ?>">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('vendor/select2/select2.min.css') ?>">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('css/util.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('css/main.css') ?>">
 </head>
 
 <body>
-
-	<video autoplay muted loop id="myVideo">
+	<?php if (session()->getFlashdata('error')): ?>
+        <p style="color:red;"> <?= session()->getFlashdata('error') ?> </p>
+    <?php endif; ?>
+	<!--<video autoplay muted loop id="myVideo">
 		<source src="back.mp4" type="video/mp4">
 		Your browser does not support HTML5 video.
-	</video>
+	</video>-->
 
 	<div class="content">
 		<div class="limiter">
@@ -75,12 +77,12 @@
 						<img src="images/img-01.jpg" alt="IMG">
 					</div>
 
-					<form class="login100-form validate-form" method="post" action="<?= base_url('articulo') ?>">
+					<form class="login100-form validate-form" method="post" action="<?= base_url('login/auth') ?>">
 						<span class="login100-form-title">
 							Mi Rienda Talabartería
 						</span>
 
-						<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<div class="wrap-input100 validate-input">
 							<input class="input100" type="text" name="usuario" placeholder="Usuario">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
@@ -89,7 +91,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Contraseña requerida">
-							<input class="input100" type="password" name="contra" placeholder="Contraseña">
+							<input class="input100" type="password" name="contrasenia" placeholder="Contraseña">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-lock" aria-hidden="true"></i>
@@ -135,21 +137,21 @@
 
 
 	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="<?= base_url('vendor/jquery/jquery-3.2.1.min.js') ?>"></script>
 	<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?= base_url('vendor/bootstrap/js/popper.js') ?>"></script>
+	<script src="<?= base_url('vendor/bootstrap/js/bootstrap.min.js') ?>"></script>
 	<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
+	<script src="<?= base_url('vendor/select2/select2.min.js') ?>"></script>
 	<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="<?= base_url('vendor/tilt/tilt.jquery.min.js') ?>"></script>
 	<script>
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
 	</script>
 	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="<?= base_url('js/main.js') ?>"></script>
 </body>
 
 </html>

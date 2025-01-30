@@ -5,6 +5,14 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+$routes->get('/usuarios', 'UsuarioController::index');
+$routes->get('/usuarios/create', 'UsuarioController::create');
+$routes->post('/usuarios/store', 'UsuarioController::store');
+$routes->get('/usuarios/edit/(:num)', 'UsuarioController::edit/$1');
+$routes->post('/usuarios/update/(:num)', 'UsuarioController::update/$1');
+$routes->get('/usuarios/delete/(:num)', 'UsuarioController::delete/$1');
+
 $routes->get('/', 'Home::index');
 $routes->get('/rol', 'RolController::index');
 $routes->get('/rol/create', 'RolController::create');
@@ -20,4 +28,7 @@ $routes->get('/venta/edit/(:num)', 'VentaController::edit/$1');
 $routes->post('/venta/update/(:num)', 'VentaController::update/$1');
 $routes->get('/venta/delete/(:num)', 'VentaController::delete/$1');
 
-$routes->post('/articulo', 'ArticuloController::index');
+$routes->get('/articulo', 'ArticuloController::index');
+$routes->get('login', 'LoginController::index');
+$routes->post('login/auth', 'LoginController::autenticar');
+$routes->get('logout', 'LoginController::salir');
