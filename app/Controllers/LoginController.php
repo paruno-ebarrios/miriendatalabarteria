@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('login');
+        return view('login/index');
     }
 
     public function autenticar()
@@ -39,7 +39,7 @@ class LoginController extends Controller
     {
         $session = session();
         $session->destroy();
-        return redirect()->to(base_url('login'));
+        return redirect()->to(base_url('login/index'));
     }
 }
 
