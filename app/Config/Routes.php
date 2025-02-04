@@ -15,6 +15,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('/usuarios/delete/(:num)', 'UsuarioController::delete/$1');
 
     $routes->get('/', 'Home::index');
+    $routes->get('/home', 'Home::index');
     $routes->get('/rol', 'RolController::index');
     $routes->get('/rol/create', 'RolController::create');
     $routes->post('/rol/store', 'RolController::store');
@@ -28,7 +29,13 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('/venta/edit/(:num)', 'VentaController::edit/$1');
     $routes->post('/venta/update/(:num)', 'VentaController::update/$1');
     $routes->get('/venta/delete/(:num)', 'VentaController::delete/$1');
-    $routes->get('/articulo', 'ArticuloController::index');
+
+    $routes->get('articulo', 'ArticuloController::index');
+    $routes->get('articulo/create', 'ArticuloController::create');
+    $routes->post('articulo/store', 'ArticuloController::store');
+    $routes->get('articulo/edit/(:num)', 'ArticuloController::edit/$1');
+    $routes->post('articulo/update/(:num)', 'ArticuloController::update/$1');
+    $routes->get('articulo/delete/(:num)', 'ArticuloController::delete/$1');
 
     $routes->get('clasificaciones', 'ClasificacionController::index');
     $routes->get('clasificaciones/create', 'ClasificacionController::create');
@@ -36,6 +43,13 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('clasificaciones/edit/(:num)', 'ClasificacionController::edit/$1');
     $routes->post('clasificaciones/update/(:num)', 'ClasificacionController::update/$1');
     $routes->get('clasificaciones/delete/(:num)', 'ClasificacionController::delete/$1');
+
+    $routes->get('/localidad', 'LocalidadController::index');
+    $routes->get('/localidad/create', 'LocalidadController::create');
+    $routes->post('/localidad/store', 'LocalidadController::store');
+    $routes->get('/localidad/edit/(:num)', 'LocalidadController::edit/$1');
+    $routes->post('/localidad/update/(:num)', 'LocalidadController::update/$1');
+    $routes->get('/localidad/delete/(:num)', 'LocalidadController::delete/$1');
 });
 
 $routes->get('login', 'LoginController::index');

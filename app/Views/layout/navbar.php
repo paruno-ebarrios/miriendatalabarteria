@@ -239,11 +239,62 @@
                 <nav id="menu" class="nav-main" role="navigation">
                     <ul class="nav nav-main">
                         <li class="nav-active">
-                            <a href="index.html">
+                            <a href="<?=base_url("home")?>">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
+                        <!--Articulos-->
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                <span>Artículos</span>
+                            </a>
+                            <ul class="nav nav-children">
+                                <li>
+                                    <a href="<?=base_url('articulo')?>">
+                                        Artículos Registrados
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?=base_url('articulo/create')?>">
+                                        Alta Artículo
+                                    </a>
+                                </li>
+                                <!--Clasificaciones-->
+                                <li>
+                                    <a href="<?=base_url('clasificaciones')?>">
+                                        Clasificaiones Registradas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?=base_url('usuarios/create')?>">
+                                        Alta Clasificación
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Localidades-->
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-tasks" aria-hidden="true"></i>
+                                <span> Localidades</span>
+                            </a>
+                            <ul class="nav nav-children">
+                                <li>
+                                    <a href="<?=base_url('localidad')?>">
+                                        Localidades Registrados
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?=base_url('localidad/create')?>">
+                                        Alta Localidad
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <!--Usuarios-->
                         <li class="nav-parent">
                             <a>
                                 <i class="fa fa-tasks" aria-hidden="true"></i>
@@ -263,25 +314,6 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-parent">
-                            <a>
-                                <i class="fa fa-list-alt" aria-hidden="true"></i>
-                                <span>Clasificaciones</span>
-                            </a>
-                            <ul class="nav nav-children">
-                                <li>
-                                    <a href="<?=base_url('clasificaciones')?>">
-                                        Clasificaiones Registradas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?=base_url('usuarios/create')?>">
-                                        Alta Clasificación
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        
                     </ul>
                 </nav>
 

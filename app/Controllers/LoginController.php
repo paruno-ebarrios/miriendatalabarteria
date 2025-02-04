@@ -29,7 +29,7 @@ class LoginController extends Controller
                 'logged_in' => true
             ];
             $session->set($sessionData);
-            return redirect()->to(base_url('articulo'));
+            return redirect()->to(base_url('home'));
         } else {
             return redirect()->back()->with('error', 'Credenciales inválidas');
         }

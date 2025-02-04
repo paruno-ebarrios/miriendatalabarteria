@@ -4,3 +4,5 @@
 <section role="main" class="content-body">
     <?= $this->renderSection('content') ?>
 </section>
+
+<?= $this->include('layout/footer') ?>
