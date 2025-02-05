@@ -261,7 +261,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?=base_url('usuarios/create')?>">
+                                    <a href="<?=base_url('clasificaciones/create')?>">
                                         Alta Clasificación
                                     </a>
                                 </li>

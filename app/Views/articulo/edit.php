@@ -26,7 +26,7 @@
     <div class="form-group">
         <label class="col-md-3 control-label" for="articulo_precio">Precio:</label>
         <div class="col-md-6">
-            <input type="number" step="0.01" name="articulo_precio" class="form-control" value="<?= $articulo['usuario_correo'] ?>" required>
+            <input type="number" step="0.01" name="articulo_precio" class="form-control" value="<?= $articulo['articulo_precio'] ?>" required>
         </div>
     </div>
 

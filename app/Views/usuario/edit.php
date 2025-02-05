@@ -43,7 +43,13 @@
     <div class="form-group">
         <label class="col-md-3 control-label" for="rol_id">Rol:</label>
         <div class="col-md-6">
-            <input type="number" name="rol_id" class="form-control" value="<?= $usuario['rol_id'] ?>" required>
+            <select name="rol_id" class="form-control" required>
+            <?php foreach ($roles as $rol) : ?>
+                <option value="<?= $rol['rol_id'] ?>" <?= $rol['rol_id'] == $usuario['rol_id'] ? 'selected' : '' ?>>
+                    <?= $rol['rol_nombre'] ?>
+                </option>
+            <?php endforeach; ?>
+            </select>
         </div>
     </div>
     <div class="form-group">

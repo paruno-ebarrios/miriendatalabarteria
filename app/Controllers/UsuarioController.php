@@ -1,15 +1,19 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\RolModel;
 use App\Models\UsuarioModel;
+use App\Models\RolModelModel;
 
 class UsuarioController extends BaseController
 {
     protected $usuarioModel;
+    protected $rolModel;
 
     public function __construct()
     {
         $this->usuarioModel = new UsuarioModel();
+        $this->rolModel = new RolModel();
     }
 
     public function index()
@@ -20,6 +24,7 @@ class UsuarioController extends BaseController
 
     public function create()
     {
+        $data['roles'] = $this->rolModel->findAll();
         return view('usuario/create');
     }
 
@@ -39,6 +44,7 @@ class UsuarioController extends BaseController
     public function edit($id)
     {
         $data['usuario'] = $this->usuarioModel->find($id);
+        $data['roles'] = $this->rolModel->findAll();
         return view('usuario/edit', $data);
     }
 

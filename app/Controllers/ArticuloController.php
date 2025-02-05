@@ -79,6 +79,7 @@ class ArticuloController extends BaseController
     public function edit($id)
     {
         $data['articulo'] = $this->articuloModel->find($id);
+        $data['clasificaciones'] = $this->clasificacionModel->findAll();
         return view('articulo/edit', $data);
     }
 
