@@ -2,6 +2,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Models\RolModel;
 
 class UsuarioModel extends Model
 {
@@ -21,7 +22,9 @@ class UsuarioModel extends Model
 
     public function validarUsuario($nombre, $contrasena)
     {
-        $usuario = $this->where('usuario_nombre', $nombre)
+        $usuario = $this->select('usuario.*, rol.rol_nombre')
+                        ->join('rol', 'usuario.rol_id = rol.rol_id')
+                        ->where('usuario_nombre', $nombre)
                          ->where('usuario_estatus', 'activo')
                          ->first();
 

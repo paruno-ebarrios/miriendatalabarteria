@@ -26,6 +26,7 @@ class LoginController extends Controller
                 'usuario_id' => $usuario['usuario_id'],
                 'usuario_nombre' => $usuario['usuario_nombre'],
                 'usuario_correo' => $usuario['usuario_correo'],
+                'rol_nombre' => $usuario['rol_nombre'],
                 'logged_in' => true
             ];
             $session->set($sessionData);
