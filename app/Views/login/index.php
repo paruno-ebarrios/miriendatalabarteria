@@ -64,10 +64,10 @@
 	<?php if (session()->getFlashdata('error')): ?>
         <p style="color:red;"> <?= session()->getFlashdata('error') ?> </p>
     <?php endif; ?>
-	<!--<video autoplay muted loop id="myVideo">
-		<source src="back.mp4" type="video/mp4">
+	<video autoplay muted loop id="myVideo">
+		<source src="<?= base_url('back.mp4') ?>" type="video/mp4">
 		Your browser does not support HTML5 video.
-	</video>-->
+	</video>
 
 	<div class="content">
 		<div class="limiter">
